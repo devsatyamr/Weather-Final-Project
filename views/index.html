@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo" style="display: flex; ">
+                <!-- <h1>Feather</h1> -->
+                <h1>ClimaView</h1>
+                <div class="slide-in-from-left">
+                    <img src="../public/images/weather.png" style="width: 7rem;">
+                
+            </div>
+                <div class="slide-in-from-left">
+                <!-- <img src="../public/images/Climaview.png" style="width: 5rem;border-radius: 15px;box-shadow: 0px 0px 5px 5px white"> -->
+
+                </div>
+            </div>
+            
+            <div class="weather-info" id="weatherInfo">
+                <div class="divContainer">
+                    <div id="temp" class="infodiv"><center><span style="font-size: 1.5rem;" id="tempValue">-</span><br>Temparature<br>(°C)</center></div>
+                    <div id="min_temp" class="infodiv"><center><span style="font-size: 1.5rem;" id="minTempValue">-</span><br>Min. Temp.<br>(°C)</center></div>
+                    <div id="max_temp" class="infodiv"><center><span style="font-size:1.5rem;" id="maxTempValue">-</span><br>Max. Temp.<br>(°C)</center></div>
+                <!--/div>
+                <div class="divContainer"-->
+                    <div id="pressure" class="infodiv"><center><span style="font-size:1.5rem;" id="pressureValue">-</span><br>Pressure<br>(Pa)</center></div>
+                    <div id="humidity" class="infodiv"><center><span style="font-size:1.5rem;" id="humidityValue">-</span><br>Humidity<br>(%)</center></div>
+                    <div id="windspeed" class="infodiv"><center><span style="font-size:1.5rem;" id="speedValue">-</span><br>Wind Speed<br>(km/h)</center></div>
+                </div>
+            </div>
+            <div id="review"><a href="../views/review.html">Rate Our App</a></div>
+            <h3>© <a href="https://www.linkedin.com/in/ayanavo-talukdar-9b12a6257/" target="_blank">Ayanavo Talukdar</a> & <a href="https://www.linkedin.com/in/devsatyamr/" target="_blank">Devsatyam Ray</a></h3>
+        </div>
+        <div class="right-panel">
+            <!--a href="loginpage.html"><img src="../public/images/user.png" style="width: 2rem;"></a-->
+            <br><br>
+            <div class="search">
+                <input type="text" id="cityInput" placeholder="Enter city name" onclick="history()">
+                <button id="searchBtn" onclick="checkWeather()"><img src="../public/images/search.png" alt="Search" style="width:2rem ;"></button>
+            </div>
+            <div id="history">
+                <div id="historyclose">
+                    <button onclick="closehistory()">X</button>
+                </div>
+                <div id="searchhistory">
+                    SEARCH HISTORY<br><br><i class="fa fa-search"></i> Kolkata
+                </div>
+            </div>
+            <div class="place-info">
+                <div id="location">
+                    <img src="../public/images/location-unscreen.gif" width="80px" height="80px">
+                    <h1 id="citylocation">Search</h1>
+                </div>
+                <div class="day-date-time">
+                    <div id="day">Mon</div>
+                    <div>||</div>
+                    <div id="date">Aug 14</div>
+                    <div>||</div>
+                    <div id="time">10:49AM</div>
+                </div>
+                <div id="forecast">
+                    ----
+                </div>
+                <div id="suntime">
+                    <br>
+                    <i class="fas fa-sun sunstyle"></i> Rise: <span id="sunrise">00.00</span> ||  Set: <span id="sunset">00.00</span>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <script src="../src/day.js"></script>
+    <script src="../src/weather.js"></script>
+    <script src="../src/city.js"></script>
+</body>
+<footer>
+</html>

@@ -1,0 +1,142 @@
+@import url("https://fonts.google.com/specimen/Tilt+Neon");
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,600&family=Cabin:wght@500&family=Fira+Sans:ital,wght@1,300&family=Mukta:wght@500&family=Poppins:wght@400;600;700&family=Rubik:wght@500&family=Ubuntu&display=swap');
+
+/* For pc/laptop */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/fiery-orange-sunset-sky-beautiful-sky.jpg");
+    background-size: cover;
+  }
+  .rating-box {
+    display:block;
+    position: relative;
+    background: transparent;
+    padding: 25px 50px 35px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .thanks
+  {
+    display:none;
+    position: relative;
+    background: transparent;
+    padding: 25px 50px 35px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 500;
+    color:#dadada;
+    text-align: center;
+  }
+  .rating-box header {
+    font-size: 22px;
+    color: #dadada;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .rating-box .stars {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+  }
+  .stars i {
+    color: #e6e6e6;
+    font-size: 35px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .stars i:hover
+  {
+    font-size: 40px;
+  }
+  .stars i.active {
+    color: goldenrod;
+  }
+  #btn
+  {
+    display:flex;
+    justify-content: right;
+    margin-top: 50px;
+  }
+  #btn button
+  {
+    padding:5px 10px 5px 10px;
+    font-size: medium;
+    font-weight:bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor:pointer;
+  }
+/* For tablet*/
+@media only screen and (max-width:650px)
+{
+  .thanks
+  {
+    padding: 15px 30px 25px;
+    font-size: 18px;
+  }
+}
+/*For mobile*/
+@media only screen and (max-width: 450px)
+{
+  .thanks
+  {
+    font-size: 15px;
+  }
+  .thanks #btn
+  {
+    margin-top: 30px;
+  }
+  .rating-box .stars
+  {
+    gap:15px;
+  }
+  .stars i
+  {
+    font-size: 20px;
+  }
+  .rating-box header
+  {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 400px)
+{
+  .thanks
+  {
+    padding: 15px 15px 15px;
+    font-size: 12px;
+  }
+  .thanks #btn button
+  {
+    font-size: small;
+    padding: 3px 6px 3px 6px;
+  }
+}
+
+@media only screen and (max-width: 350px)
+{
+  .rating-box .stars
+  {
+    gap:10px;
+  }
+  .stars i
+  {
+    font-size: 15px;
+  }
+  .rating-box
+  {
+    padding: 10px 10px 10px 10px;
+  }
+}
